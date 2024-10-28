@@ -52,14 +52,26 @@
             height: auto;
         }
         /* Video styles */
-        video {
-            display: block;
-            margin: 20px auto;
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
             max-width: 100%;
-            height: auto;
+            background: #000;
+            margin: 20px auto;
             border-radius: 10px;
             box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
         }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
         /* Footer styles */
         footer {
             text-align: center;
@@ -110,16 +122,10 @@
         <h2>ما هو مرض الأطفال القمر؟</h2>
         <p>مرض الأطفال القمر هو حالة جلدية نادرة تُعرف بحساسية مفرطة لأشعة الشمس. يحدث هذا المرض بسبب خلل جيني يؤثر على قدرة الجسم على إصلاح ضرر الحمض النووي الناجم عن الأشعة فوق البنفسجية.</p>
         
-        <!-- Video element added here -->
-        <section id="about">
-    <h2>ما هو مرض الأطفال القمر؟</h2>
-    <p>مرض الأطفال القمر هو حالة جلدية نادرة تُعرف بحساسية مفرطة لأشعة الشمس. يحدث هذا المرض بسبب خلل جيني يؤثر على قدرة الجسم على إصلاح ضرر الحمض النووي الناجم عن الأشعة فوق البنفسجية.</p>
-    
-    <!-- Embed video using iframe -->
-    <iframe src="https://drive.google.com/file/d/1Frpqi-o0I09PFRZsihprZj6SPOiGl1uO/preview" width="640" height="480" allow="autoplay" allowfullscreen></iframe>
-
-</section>
-
+        <!-- Responsive video container -->
+        <div class="video-container">
+            <iframe src="https://drive.google.com/file/d/1Frpqi-o0I09PFRZsihprZj6SPOiGl1uO/preview" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
 
     </section>
     <section id="symptoms">
