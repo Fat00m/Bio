@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>اطفال القمر</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet"> <!-- Google Fonts link -->
     <style>
         /* Reset some basic elements */
         * {
@@ -11,64 +12,72 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Amiri', sans-serif; /* Changed font to 'Cairo' */
             line-height: 1.6;
-            background-color: #b2d6f5; /* Light blue background */
-            color: #333;
+            background-color: #ebe4d9; /* Light blue background */
+            color: #fdfdfd;
             padding: 20px;
             text-align: right; /* Align text to the right for Arabic */
         }
-
         /* Header styles */
         header {
-            background: #3b5998; /* Facebook blue */
+            background: #8fa481; /* Facebook blue */
             color: #ffffff;
             padding: 20px;
             margin-bottom: 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 10px rgba(2, 0, 0, 0.1);
         }
-
         h1 {
             margin: 0;
             font-size: 2.5rem;
         }
-
         /* Section styles */
         section {
-            background: #ffffff; /* White background for sections */
+            background: #8fa481; /* White background for sections */
             padding: 20px;
             margin-bottom: 20px;
             border-radius: 10px;
-            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 15px rgba(1, 0, 0, 0.1);
         }
-
         h2 {
             margin-bottom: 15px;
             font-size: 2rem;
         }
-
+        /* Center images */
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+        /* Video styles */
+        video {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        }
         /* Footer styles */
         footer {
             text-align: center;
             padding: 15px 0;
-            background: #3b5998;
-            color: #ffffff;
+            background: #8fa481;
+            color: #030303;
             position: relative;
             bottom: 0;
             width: 100%;
         }
-
         /* Form styles */
         .container {
-            background: #ffffff;
+            background: #8fa481;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
         }
-
         textarea {
             width: 100%;
             height: 100px;
@@ -77,57 +86,61 @@
             resize: none;
             font-size: 1rem;
         }
-
         button {
-            background: #3b5998;
-            color: #ffffff;
+            background: #ebe4d9 ;
+            color: #000000;
             padding: 10px 20px;
             border: none;
             cursor: pointer;
             font-size: 1rem;
         }
-
         button:hover {
-            background: #2d4373;
+            background: #bfcbb7;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>اطفال القمر</h1>
+    <section>
+        <h1>🧬أطفال القمر🧬</h1>
         <h4>جفاف الجلد المتصبغ</h4>
         <h4>(Xeroderma pigmentosum)</h4>
-    </header>
-
+    </section>
+    
     <section id="about">
         <h2>ما هو مرض الأطفال القمر؟</h2>
         <p>مرض الأطفال القمر هو حالة جلدية نادرة تُعرف بحساسية مفرطة لأشعة الشمس. يحدث هذا المرض بسبب خلل جيني يؤثر على قدرة الجسم على إصلاح ضرر الحمض النووي الناجم عن الأشعة فوق البنفسجية.</p>
+        
+        <!-- Video element added here -->
+        <video controls>
+            <source src="moon children.mp4" type="video/mp4">
+            <!-- Fallback content if the video is not supported -->
+            متصفحك لا يدعم تشغيل الفيديو. يرجى استخدام متصفح حديث.
+        </video>
     </section>
-
     <section id="symptoms">
         <h2>الأعراض</h2>
+        <img src="pic.png" alt="Image of symptoms">
         <ul>
             <li>حساسية الشمس</li>
             <li>مشاكل جلدية</li>
             <li>خطر الإصابة بالسرطان</li>
         </ul>
     </section>
-
     <section id="diagnosis">
         <h2>التشخيص</h2>
-        <p>يتم التشخيص عبر الفحص الطبي واستبعاد وجود أي حالات أخرى قد تؤدي إلى ظهور أعراض التحسس تجاه أشعة الشمس، ويتم إجراء فحص جينات محددة لتشخيص المرض ونوعه تحديدًا.</p>
+        <p>يتم التشخيص عبر الفحص الطبي واستبعاد وجود أي حالات أخرى قد تؤدي إلى ظهور أعراض التحسس تجاه أشعة الشمس...</p>
     </section>
-
     <section id="treatment">
         <h2>العلاج</h2>
-        <p>لا يوجد لحد الآن علاج ناجح ضد المرض لكن تبقى الاحتياطات والتدابير اللازمة أفضل وأهم بالنسبة للمريض. وتشمل عدم التعرض لأشعة الشمس، استعمال المراهم المركزة، وارتداء نظارات شمسية وأقنعة، وكذلك ملابس خاصة.</p>
+        <img src="images.png" alt="Treatment options image">
+        <br/>
+        <p>لا يوجد لحد الآن علاج ناجح ضد المرض لكن تبقى الاحتياطات والتدابير اللازمة أفضل وأهم بالنسبة للمريض...</p>
     </section>
 
-    <section dir="rtl" id="names">
-        <h3>:عمل الطالبات</h3>
-        <h4>مريم فيصل، فاطمة حمزة، إسراء رضا، فاطمة جعفر، كوثر سعيد، حوراء عبد الرضا</h4>
+    <section id="names">
+    <h3>:عمل الطالبات</h3>
+    <h4>مريم فيصل، فاطمة حمزة، إسراء رضا، فاطمة جعفر، كوثر سعيد، حوراء عبد الرضا</h4>
     </section>
-
     <div class="container">
         <h4>💗✨آرائكم تهمنا✨💗</h4>
         <form action="https://formspree.io/f/manywewr" method="POST">
@@ -135,9 +148,8 @@
             <button type="submit">Submit</button>
         </form>
     </div>
-
-    <footer>
-        <p>&copy; 2024 اطفال القمر</p>
-    </footer>
+    <section>
+            <p>&copy; 2024 اطفال القمر</p>
+       </section>
 </body>
 </html>
